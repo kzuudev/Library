@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="header">
+        <header class="header_title">
+            <h1>My Library</h1>
+        </header>
+    </div>
+
+    <main class="content">
+        <div class="content__item">
+            <h2 class="item__title">Your Books</h2>
+            
+            <button class="item__button">Add New Book</button>
+        </div>
+
+        <div class="form__modal">
+            <form id="new__book-form" action="">
+                <div class="form__item-title">
+                    <label for="title">Title: </label>
+                    <input id="title" type="text">
+                </div>
+
+                <div class="form__item-author">
+                    <label for="author">Author:</label>
+                    <input id="author" type="text">
+                </div>
+
+                <div class="form__item-pages">
+                    <label for="pages">Pages:</label>
+                    <input id="pages" type="text">
+                </div>
+
+                <div class="form__item-read">
+                    <label for="title">Read: </label>
+                    <input id="checkbox" type="checkbox">
+                </div>
+
+                <div class="form__item-submit">
+                    <input id="add__book" type="submit" value="Add Book">
+                </div>
+            </form>
+
+        </div>
+
+        <div class="content__table">
+            <table class="content__table-book">
+                <thead>
+                    <tr class="table__book-items">
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="book-table-body">
+                    <!-- Book rows will be dynamically inserted here via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

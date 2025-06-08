@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+:root {
+    --font-family-default: "Red Hat Text", sans-serif;
+
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+    --rose-50: hsl(20, 50%, 98%);
+    --rose-100: hsl(13, 31%, 94%);
+    --rose-300: hsl(14, 25%, 72%);
+    --rose-400: hsl(7, 20%, 60%);
+    --rose-500: hsl(12, 20%, 44%);
+    --rose-900: hsl(14, 65%, 9%);
+
+    --white: hsl(0, 0%, 100%);
+
+    --font-size-100: 0.5rem;
+    --font-size-200: 0.8rem;
+    --font-size-500: 1rem;
+    --font-size-600: 1.5rem;
+    --font-size-700: 2rem;
+
+    --font-weight-normal: 500;
+    --font-weight-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+
+
+.header {
+    padding: 1.5rem;
+}
+
+
+.content {
+    margin: 6rem;    
+}
+
+
+.content__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.item__button {
+    padding: 1rem;
+    border: none;
+    border-radius: .5em;
+}
+
+.form__modal{
+    display: none;
+}
+
+
+.table__book-items {
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+    gap: 10rem;
+}
+
+.table__book-items th {
+    font-size: var(--font-size-500);
+}
+
+
+.form__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    background-color: white; 
+    padding: 1.5rem;
+}
+
+
+#new__book-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2em;
+}
+
+#new__book-form > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.form__item {
+    display: flex;
+    align-items: center;
+}
+
+#form__item-submit {
+    margin-top: 1rem;
+}
+
+
+#title,
+#author,
+#pages {
+    width: 20rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#title {
+    margin-left: 1rem;
+}
+
+#title:focus,
+#author:focus,
+#pages:focus {
+    border-color: #007bff;
+}
+
+
+#checkbox {
+    width: auto;
+    transform: scale(1.2);
+
+}
+
+
+#add__book {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-left: auto;
+    padding: .75rem;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#add__book:hover {
+    background-color: #0056b3;
+}
+
