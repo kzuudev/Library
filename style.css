@@ -221,3 +221,12 @@ body {
 .btn-primary:hover {
     background-color: #cc4b4b;
 }
+
+.btn-secondary {
+    background-color: blue;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #0e0e8b;
+}
